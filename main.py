@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Radha")
+    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Yashu")
 
 
 @bot.on_message(filters.command("stop"))
@@ -41,9 +41,9 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["Radha"]))
+@bot.on_message(filters.command(["Yashu"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('𝐇𝐥𝐨 𝐉𝐚𝐚𝐧 💜 𝐈 𝐀𝐦 𝐑𝐚𝐝𝐡𝐚 𝐁𝐨𝐭 ....😊  Send  𝐓𝐗𝐓 file for download')
+    editable = await m.reply_text('𝐇𝐥𝐨 𝐉𝐚𝐚𝐧 💜 𝐈 𝐀𝐦 Yashu 𝐁𝐨𝐭 ....😊  Send  𝐓𝐗𝐓 file for download')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -164,8 +164,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📺]𝐕𝐈𝐃_𝐈𝐃 [@zone_sr] ➤** {str(count).zfill(3)}\n**[📝]𝐓𝐈𝐓𝐋𝐄  ➤** {name1} {res}ㅤ𓆩🖤𓆪 ❀ 𝐑α∂ɦα .mkv\n**[♦]𝐁𝐀𝐓𝐂𝐇 ➤** {raw_text0}\n\n'
-                cc1 = f'**[📺]𝐕𝐈𝐃_𝐈𝐃 [@zone_sr] ➤** {str(count).zfill(3)}\n**[📝]𝐓𝐈𝐓𝐋𝐄 ➤** {name1}ㅤ𓆩🖤𓆪 ❀ 𝐑α∂ɦαㅤ.pdf \n**[♦]𝐁𝐀𝐓𝐂𝐇 ➤** {raw_text0}\n\n'
+                cc = f'**[📺]𝐕𝐈𝐃_𝐈𝐃 ➤** {str(count).zfill(3)}\n**[📝]𝐓𝐈𝐓𝐋𝐄  ➤** {name1} {res}ㅤRaider .mkv\n**[♦]𝐁𝐀𝐓𝐂𝐇 ➤** {raw_text0}\n\n'
+                cc1 = f'**[📺]𝐕𝐈𝐃_𝐈𝐃 ➤** {str(count).zfill(3)}\n**[📝]𝐓𝐈𝐓𝐋𝐄 ➤** {name1}ㅤRaiderㅤ.pdf \n**[♦]𝐁𝐀𝐓𝐂𝐇 ➤** {raw_text0}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -191,7 +191,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**📥𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆📥 » @zone_sr **\n\n**📑𝐍𝐀𝐌𝐄 »** `{name}\n🍀𝐐𝐔𝐀𝐋𝐈𝐓𝐘 » {raw_text2}`\n\n**📎𝐔𝐑𝐋 :-** `{url}`"
+                    Show = f"**📥𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆📥 »  **\n\n**📑𝐍𝐀𝐌𝐄 »** `{name}\n🍀𝐐𝐔𝐀𝐋𝐈𝐓𝐘 » {raw_text2}`\n\n**📎𝐔𝐑𝐋 :-** `{url}`"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -208,7 +208,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("𝐃𝐎𝐍𝐄 𝐁𝐘 𝐑𝐀𝐃𝐇𝐀💚")
+    await m.reply_text("𝐃𝐎𝐍𝐄💚")
 
 
 bot.run()
